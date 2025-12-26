@@ -23,7 +23,7 @@ class Setup extends AbstractSetup
         $this->schemaManager()->createTable('xf_miatoro_tether', function(Create $table)
         {
             $table->addColumn('tether_id', 'int')->autoIncrement();
-            $table->addColumn('identifier', 'varchar', 100)->unique();
+            $table->addColumn('identifier', 'varchar', 100);
             $table->addColumn('title', 'varchar', 255);
             $table->addColumn('category', 'varchar', 50)->setDefault('');
             $table->addColumn('tags', 'text')->nullable();
@@ -47,7 +47,7 @@ class Setup extends AbstractSetup
             $table->addColumn('created_date', 'int')->setDefault(0);
             $table->addColumn('modified_date', 'int')->setDefault(0);
             $table->addPrimaryKey('tether_id');
-            $table->addKey('identifier');
+            $table->addUniqueKey('identifier');
             $table->addKey('category');
         });
     }

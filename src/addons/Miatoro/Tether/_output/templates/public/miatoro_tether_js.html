@@ -1,0 +1,49 @@
+<xf:js>
+!function($, window, document) {
+	"use strict";
+
+	XF.Element.register('miatoro-tether-trigger', 'MiatoroTetherTrigger');
+
+	XF.MiatoroTetherTrigger = XF.Element.newHandler({
+		options: {},
+
+		init: function() {
+			var $trigger = this.$target;
+			$trigger.on('click', XF.proxy(this, 'click'));
+			$trigger.css('cursor', 'pointer');
+		},
+
+		click: function(e) {
+			e.preventDefault();
+
+			var $trigger = this.$target;
+			var identifier = $trigger.data('identifier');
+			var positive = $trigger.data('positive') || 0;
+			var negative = $trigger.data('negative') || 0;
+
+			if (!identifier) {
+				console.error('Tether identifier is missing');
+				return;
+			}
+
+			// Build the URL for the popup
+			var url = XF.canonicalizeUrl('index.php?tether/view&identifier=' + encodeURIComponent(identifier) + '&positive=' + positive + '&negative=' + negative);
+
+			// Show XenForo overlay
+			XF.setupHtmlInsert(
+				'<div class="overlay-content"></div>',
+				function($html, data) {
+					$html.find('.overlay-content').html(data.html.content);
+				}
+			);
+
+			// Use XenForo's AJAX overlay
+			XF.ajax('GET', url, {}, function(data) {
+				if (data.html && data.html.content) {
+					XF.overlayMessage(data.html.content);
+				}
+			});
+		}
+	});
+}(jQuery, window, document);
+</xf:js>

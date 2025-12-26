@@ -1,0 +1,85 @@
+/* Tether BBCode Styles */
+
+.miatoro-tether {
+	display: inline-block;
+	margin: 2px;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&:hover .miatoro-tether-image {
+		opacity: 0.8;
+		transform: scale(1.05);
+		transition: all 0.2s ease;
+	}
+}
+
+.miatoro-tether-image {
+	max-width: 100px;
+	max-height: 100px;
+	width: auto;
+	height: auto;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease;
+}
+
+.miatoro-tether--missing {
+	opacity: 0.5;
+}
+
+.miatoro-tether-image--missing {
+	filter: grayscale(100%);
+}
+
+/* Popup Styles */
+
+.miatoro-tether-popup-image {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.miatoro-tether-popup-category,
+.miatoro-tether-popup-tags {
+	margin-bottom: 10px;
+}
+
+.miatoro-tether-popup-description {
+	margin: 15px 0;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.05);
+	border-left: 3px solid @xf-paletteAccent1;
+	border-radius: 3px;
+}
+
+.miatoro-tether-popup-negatives,
+.miatoro-tether-popup-positives {
+	margin-top: 10px;
+}
+
+.miatoro-tether-effect {
+	margin-bottom: 10px;
+	padding: 8px 12px;
+	background: @xf-contentBg;
+	border: 1px solid @xf-borderColor;
+	border-radius: 3px;
+
+	&--active {
+		background: fadeout(@xf-paletteAccent1, 90%);
+		border-color: @xf-paletteAccent1;
+		border-width: 2px;
+		font-weight: bold;
+
+		strong {
+			color: @xf-paletteAccent1;
+		}
+	}
+}
+
+.miatoro-tether-popup-wiki {
+	text-align: center;
+	margin-top: 15px;
+
+	a {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,158 @@
+{
+    "miatoro_tether_add_tether.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_category.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_confirm_delete.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_deepen_effects.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_deepen_level.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_delete_tether.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_description.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_edit_tether.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_identifier.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_identifier_explain.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_image_path.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_image_path_explain.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_manage_tethers.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_mend_effects.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_mend_level.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_negative_effects.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_negative_x.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_no_tethers_defined.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_not_found.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_positive_effects.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_positive_x.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_tags.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_tags_explain.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_title.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_view_wiki.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    },
+    "miatoro_tether_wiki_url.txt": {
+        "global_cache": false,
+        "version_id": 1000000,
+        "version_string": "1.0.0",
+        "addon_id": "Miatoro\/Tether"
+    }
+}

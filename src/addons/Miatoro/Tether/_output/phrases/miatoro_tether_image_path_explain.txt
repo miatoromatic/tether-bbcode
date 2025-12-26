@@ -1,0 +1,1 @@
+Path to the tether image (e.g., "/db/tethers/arachnas-swansong.webp"). Leave empty to use default path /db/{identifier}.webp

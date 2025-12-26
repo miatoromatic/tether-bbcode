@@ -1,0 +1,13 @@
+<xf:title>{{ phrase('miatoro_tether_delete_tether') }}</xf:title>
+
+<xf:form action="{{ link('tethers/delete', $tether) }}" ajax="true" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:p>{{ phrase('miatoro_tether_confirm_delete', {'title': $tether.title}) }}</xf:p>
+		</div>
+
+		<xf:submitrow sticky="true" icon="delete">
+			<xf:button>{{ phrase('cancel') }}</xf:button>
+		</xf:submitrow>
+	</div>
+</xf:form>

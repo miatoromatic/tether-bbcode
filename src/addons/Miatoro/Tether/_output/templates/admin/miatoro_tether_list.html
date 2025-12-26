@@ -1,0 +1,42 @@
+<xf:title>{{ phrase('miatoro_tether_manage_tethers') }}</xf:title>
+
+<xf:pageaction>
+	<xf:button href="{{ link('tethers/add') }}" icon="add">{{ phrase('miatoro_tether_add_tether') }}</xf:button>
+</xf:pageaction>
+
+<xf:if is="$tethers is not empty">
+	<div class="block">
+		<div class="block-container">
+			<div class="block-body">
+				<div class="structItemContainer">
+					<xf:foreach loop="$tethers" value="$tether">
+						<div class="structItem structItem--middle">
+							<div class="structItem-cell structItem-cell--main" data-xf-init="tooltip" title="{{ $tether.description|slice(0, 100) }}...">
+								<div class="structItem-title">
+									<a href="{{ link('tethers/edit', $tether) }}">{{ $tether.title }}</a>
+								</div>
+								<div class="structItem-minor">
+									<ul class="listInline listInline--bullet">
+										<li><strong>{{ phrase('miatoro_tether_identifier') }}:</strong> {{ $tether.identifier }}</li>
+										<xf:if is="$tether.category">
+											<li><strong>{{ phrase('miatoro_tether_category') }}:</strong> {{ $tether.category }}</li>
+										</xf:if>
+										<xf:if is="$tether.tags">
+											<li><strong>{{ phrase('miatoro_tether_tags') }}:</strong> {{ $tether.tags }}</li>
+										</xf:if>
+									</ul>
+								</div>
+							</div>
+							<div class="structItem-cell structItem-cell--action">
+								<a href="{{ link('tethers/edit', $tether) }}" class="button button--small">{{ phrase('edit') }}</a>
+								<a href="{{ link('tethers/delete', $tether) }}" class="button button--small" data-xf-click="overlay">{{ phrase('delete') }}</a>
+							</div>
+						</div>
+					</xf:foreach>
+				</div>
+			</div>
+		</div>
+	</div>
+<xf:else />
+	<div class="blockMessage">{{ phrase('miatoro_tether_no_tethers_defined') }}</div>
+</xf:if>

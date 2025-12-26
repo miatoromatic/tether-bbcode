@@ -1,0 +1,12 @@
+{
+    "navigation_id": "miatoro_tether",
+    "parent_navigation_id": "content",
+    "display_order": 500,
+    "link": "tethers",
+    "icon": "fa-link",
+    "admin_permission_id": "",
+    "debug_only": false,
+    "development_only": false,
+    "hide_no_children": false,
+    "addon_id": "Miatoro\/Tether"
+}

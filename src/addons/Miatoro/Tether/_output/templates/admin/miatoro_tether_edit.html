@@ -1,0 +1,54 @@
+<xf:title>{{ $tether.tether_id ? phrase('miatoro_tether_edit_tether') : phrase('miatoro_tether_add_tether') }}</xf:title>
+
+<xf:form action="{{ link('tethers/save', $tether) }}" ajax="true" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow name="identifier" value="{{ $tether.identifier }}" label="{{ phrase('miatoro_tether_identifier') }}"
+				explain="{{ phrase('miatoro_tether_identifier_explain') }}" required="true" />
+
+			<xf:textboxrow name="title" value="{{ $tether.title }}" label="{{ phrase('miatoro_tether_title') }}" required="true" />
+
+			<xf:selectrow name="category" value="{{ $tether.category }}" label="{{ phrase('miatoro_tether_category') }}">
+				<xf:option value="">{{ phrase('none') }}</xf:option>
+				<xf:foreach loop="$categories" key="$key" value="$value">
+					<xf:option value="{{ $key }}">{{ $value }}</xf:option>
+				</xf:foreach>
+			</xf:selectrow>
+
+			<xf:textboxrow name="tags" value="{{ $tether.tags }}" label="{{ phrase('miatoro_tether_tags') }}"
+				explain="{{ phrase('miatoro_tether_tags_explain') }}" />
+
+			<xf:textboxrow name="wiki_url" value="{{ $tether.wiki_url }}" label="{{ phrase('miatoro_tether_wiki_url') }}" />
+
+			<xf:textboxrow name="image_path" value="{{ $tether.image_path }}" label="{{ phrase('miatoro_tether_image_path') }}"
+				explain="{{ phrase('miatoro_tether_image_path_explain') }}" />
+
+			<xf:textarearow name="description" value="{{ $tether.description }}" label="{{ phrase('miatoro_tether_description') }}"
+				autosize="true" />
+
+			<xf:hr />
+
+			<h3 class="block-formSectionHeader">
+				<span class="block-formSectionHeader-aligner">{{ phrase('miatoro_tether_negative_effects') }}</span>
+			</h3>
+
+			<xf:foreach loop="[1,2,3,4,5,6,7]" value="$i">
+				<xf:textarearow name="negative_{$i}" value="{{ $tether['negative_' ~ $i] }}"
+					label="{{ phrase('miatoro_tether_negative_x', {'number': $i}) }}" autosize="true" />
+			</xf:foreach>
+
+			<xf:hr />
+
+			<h3 class="block-formSectionHeader">
+				<span class="block-formSectionHeader-aligner">{{ phrase('miatoro_tether_positive_effects') }}</span>
+			</h3>
+
+			<xf:foreach loop="[1,2,3,4,5,6,7]" value="$i">
+				<xf:textarearow name="positive_{$i}" value="{{ $tether['positive_' ~ $i] }}"
+					label="{{ phrase('miatoro_tether_positive_x', {'number': $i}) }}" autosize="true" />
+			</xf:foreach>
+		</div>
+
+		<xf:submitrow sticky="true" icon="save" />
+	</div>
+</xf:form>

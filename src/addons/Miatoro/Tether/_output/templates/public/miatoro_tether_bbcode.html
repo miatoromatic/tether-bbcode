@@ -1,0 +1,14 @@
+<xf:if is="$tether">
+	<span class="miatoro-tether" data-identifier="{{ $identifier }}" data-positive="{{ $positiveValue }}" data-negative="{{ $negativeValue }}" data-xf-init="miatoro-tether-trigger">
+		<img src="{{ $tether.image_path ?: base_url('db/' . $identifier . '.webp') }}"
+			alt="{{ $tether.title }}"
+			title="{{ $tether.title }}"
+			class="miatoro-tether-image" />
+	</span>
+<xf:else />
+	<span class="miatoro-tether miatoro-tether--missing" title="{{ phrase('miatoro_tether_not_found') }}">
+		<img src="{{ base_url('db/' . $identifier . '.webp') }}"
+			alt="{{ $identifier }}"
+			class="miatoro-tether-image miatoro-tether-image--missing" />
+	</span>
+</xf:if>

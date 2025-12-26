@@ -1,0 +1,16 @@
+{
+    "legacy_addon_id": "",
+    "title": "Tether BBCode System",
+    "description": "A comprehensive tether management system with BBCode integration for tracking positive and negative tether effects.",
+    "version_id": 1000000,
+    "version_string": "1.0.0",
+    "dev": "",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": {
+        "XF": [2020870, "XenForo 2.2.8+"]
+    },
+    "icon": ""
+}

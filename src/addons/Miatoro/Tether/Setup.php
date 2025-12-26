@@ -58,11 +58,11 @@ class Setup extends AbstractSetup
     public function installStep2()
     {
         /** @var \XF\Entity\BbCode $bbCode */
-        $bbCode = $this->em()->find('XF:BbCode', 'tether');
+        $bbCode = \XF::em()->find('XF:BbCode', 'tether');
 
         if (!$bbCode)
         {
-            $bbCode = $this->em()->create('XF:BbCode');
+            $bbCode = \XF::em()->create('XF:BbCode');
             $bbCode->bb_code_id = 'tether';
         }
 
@@ -100,7 +100,7 @@ class Setup extends AbstractSetup
     public function uninstallStep2()
     {
         /** @var \XF\Entity\BbCode $bbCode */
-        $bbCode = $this->em()->find('XF:BbCode', 'tether');
+        $bbCode = \XF::em()->find('XF:BbCode', 'tether');
 
         if ($bbCode)
         {
